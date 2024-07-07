@@ -153,7 +153,7 @@ function library:GetConfigs()
     local files = {}
     for _, file in ipairs(listfiles(self.foldername)) do
         local filename = file:match("([^/]+)$") 
-        local name, ext = filename:match("(.*)(%..+)$")
+        local name, ext = filename:match("Nilhub Private/(.*)(%..+)$")
         if ext == self.fileext then
             table.insert(files, name)
         end
